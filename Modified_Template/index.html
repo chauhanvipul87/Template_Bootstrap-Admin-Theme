@@ -1,0 +1,211 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+<title>IANA's Bad Order Equipment Status Service</title>
+
+    
+<!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+<link href="assets/styles.css" rel="stylesheet" media="screen">
+<link href="assets/DT_bootstrap.css" rel="stylesheet" media="screen">
+<link href="vendors/jGrowl/jquery.jgrowl.css" rel="stylesheet" media="screen">
+<link href="vendors/jquery-ui-1.10.4.custom_css/jquery-ui-1.10.4.custom.css" rel="stylesheet" media="screen">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="vendors/flot/excanvas.min.js"></script><![endif]-->
+ <!--[if lt IE 9]>
+     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+ <![endif]-->
+ 
+ <!--<link href="vendors/datepicker.css" rel="stylesheet" media="screen"> -->
+<link href="vendors/uniform.default.css" rel="stylesheet" media="screen">
+<link href="vendors/chosen.min.css" rel="stylesheet" media="screen">
+
+<link href="vendors/wysiwyg/bootstrap-wysihtml5.css" rel="stylesheet" media="screen">
+
+
+
+</head>
+  <body>
+  	
+
+
+
+<noscript>
+		<div class="alert alert-block span9">
+			<h4 class="alert-heading">Warning!</h4>
+			<p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> enabled to use this site.</p>
+		</div>
+</noscript>   
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+        	<div style="display:inline;">
+				 <a class="brand" href="javascript:void(0);"><img src="images/gea_logo.png" style="width:197px;height:57px"	 /></a>
+				<div style="float:right;margin-top:20px;color:#878787"> 
+					<h4>	GEA Process Engineering (India) Pvt. Ltd. </h4>
+					<span style="float:right;font-weight:bold;color: #993300;">
+					Vipul Chauhan asfasfdf </span>
+               	<br/>
+				</div>
+			 </div>
+			 <br/>			
+        
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+            </a>
+      
+			   <div style="display:inline;clear:both;"></div>
+               <div class="nav-collapse collapse" style="margin-top: 65px;">
+                <ul class="nav pull-right">
+                    <li class="dropdown">
+                        <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-user"></i>  <i class="caret"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a tabindex="-1" href="logout.do">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav">
+                 <li>
+				         <a href="logout.do"><img src="images/logout.png" width="30" height="30"/>Logout</a>
+				     </li>
+	             
+	              <li>
+				         <a href="logout.do"><img src="images/logout.png" width="30" height="30"/>Logout</a>
+				     </li>
+	               
+	                 <li>
+				         <a href="logout.do"><img src="images/logout.png" width="30" height="30"/>Logout</a>
+				     </li>
+	               
+	                <li>
+				         <a href="logout.do"><img src="images/logout.png" width="30" height="30"/>Logout</a>
+				     </li>
+		         
+				     <li>
+				         <a href="logout.do"><img src="images/logout.png" width="30" height="30"/>Logout</a>
+				     </li>
+					 <li>
+				         <a href="logout.do"><img src="images/logout.png" width="30" height="30"/>Logout</a>
+				     </li>
+	             
+	              <li>
+				         <a href="logout.do"><img src="images/logout.png" width="30" height="30"/>Logout</a>
+				     </li>
+	               
+	                 <li>
+				         <a href="logout.do"><img src="images/logout.png" width="30" height="30"/>Logout</a>
+				     </li>
+	               
+	                <li>
+				         <a href="logout.do"><img src="images/logout.png" width="30" height="30"/>Logout</a>
+				     </li>
+		         
+				     <li>
+				         <a href="logout.do"><img src="images/logout.png" width="30" height="30"/>Logout</a>
+				     </li>
+                </ul>                              
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+ <!-- loading start -->
+<div id="ajax_loader" style="text-align: center;">
+		<img style="vertical-align: middle;" alt="loading..." src="images/loading2.gif" height="35"
+			/> &nbsp; Processing...Please wait...
+</div>
+<!-- loading end -->
+ <!-- error Div start -->
+<div id="errorDiv"></div> 
+
+         <div class="container-fluid">
+            <div class="row-fluid">
+            	
+                <!--/span-->
+                <div class="span12" id="content">
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <!-- block -->
+                            <div class="block">
+                                <div class="navbar navbar-inner block-header">
+                                    <div class="muted pull-left">Dashboard</div>
+                                </div>
+                                <div class="block-content collapse in">
+                                    <div class="span12">
+                                       <h4>Welcome to GEA Service</h4>
+                                       <div id="resDiv"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /block -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+    
+
+
+
+<hr>
+<footer>
+<div align="center">
+	<p>Copyright &copy; 2014   Intermodal Association of North America. All Rights Reserved.</p>
+	<p>11785 Beltsville Drive, Suite 1100, Calverton, MD 20705 infosvcshelpdesk@intermodal.org	</p>
+</div>	
+</footer>    
+
+
+
+
+
+	 <!--<script src="vendors/jquery-1.9.1.min.js"></script> -->
+	 <!-- <script src="vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script> -->
+	<script src="vendors/jquery-1.10.2.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/scripts.js"></script>
+	<!-- <script src="vendors/datatables/js/jquery.dataTables.min.js"></script> -->
+	<script src="vendors/datatables/js/jquery.dataTables.js"></script>
+	<script src="assets/DT_bootstrap.js"></script>
+	<script src="vendors/jGrowl/jquery.jgrowl.js"></script>
+	
+	<script src="vendors/jquery.uniform.min.js"></script>
+	<script src="vendors/chosen.jquery.min.js"></script>
+	 <!--<script src="vendors/bootstrap-datepicker.js"></script> -->
+	<script src="vendors/wysiwyg/wysihtml5-0.3.0.js"></script>
+	<script src="vendors/wysiwyg/bootstrap-wysihtml5.js"></script>
+	<script src="vendors/wizard/jquery.bootstrap.wizard.min.js"></script>
+	<script src="vendors/jquery-ui-1.10.4.custom.js"></script>    
+	
+
+ 
+           	<script type="text/javascript" src="developerjs/application.js"></script>
+            <script type="text/javascript" src="developerjs/request.js"></script>
+           
+			
+				
+				
+					 <script type="text/javascript">
+						$( document ).ready(function() {
+							$("#dashboardMenu").addClass( "active" );
+						});
+					</script> 
+				
+			
+			
+        </div>
+        <!--/.fluid-container-->
+    </body>
+</html>

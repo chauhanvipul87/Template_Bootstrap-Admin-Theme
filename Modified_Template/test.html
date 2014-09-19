@@ -1,0 +1,429 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>Add Secondary User</title>
+  	 
+<title>IANA's Bad Order Equipment Status Service</title>
+
+    
+<!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+<link href="assets/styles.css" rel="stylesheet" media="screen">
+<link href="assets/DT_bootstrap.css" rel="stylesheet" media="screen">
+<link href="vendors/jGrowl/jquery.jgrowl.css" rel="stylesheet" media="screen">
+<link href="vendors/jquery-ui-1.10.4.custom_css/jquery-ui-1.10.4.custom.css" rel="stylesheet" media="screen">
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="vendors/flot/excanvas.min.js"></script><![endif]-->
+ <!--[if lt IE 9]>
+     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+ <![endif]-->
+ 
+ <!--<link href="vendors/datepicker.css" rel="stylesheet" media="screen"> -->
+<link href="vendors/uniform.default.css" rel="stylesheet" media="screen">
+<link href="vendors/chosen.min.css" rel="stylesheet" media="screen">
+
+<link href="vendors/wysiwyg/bootstrap-wysihtml5.css" rel="stylesheet" media="screen">
+
+
+
+  	 
+</head>
+  <body>
+  	
+
+
+
+<noscript>
+		<div class="alert alert-block span9">
+			<h4 class="alert-heading">Warning!</h4>
+			<p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> enabled to use this site.</p>
+		</div>
+</noscript>   
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+        	<div style="display:inline;">
+				 <a class="brand" href="javascript:void(0);"><img src="images/boesc_logo.png" /></a>
+			 </div>
+			 <br/>			
+        
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+            </a>
+              
+               <div style="display:inline;float:right;margin-top: 10px;font-weight:bold;color: #993300;">
+                
+               	<br/>
+               	
+	             	
+	             		Bnsf Railway Company | 281683 | BNSF
+	             	
+	             
+	            </div>
+			   <div style="display:inline;clear:both;"></div>
+               <div class="nav-collapse collapse" style="margin-top: 65px;">
+                <ul class="nav pull-right">
+                    <li class="dropdown">
+                        <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-user"></i> John Smith <i class="caret"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a tabindex="-1" href="logout.do">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav">
+                
+	             
+					  	<!--  MENU :::::::::::::::::::::::::::::::::  IEP ::::::::::::::::::::::::::::::::::::::::::::::: -->
+					  	
+							<li id="dashboardMenu">
+	                      			<a href="home.do"><img src="images/home.png" width="30" height="30"/>Home</a>
+	                  		</li>
+					  	
+					   
+						  <li id="profileMenuHeader" class="dropdown">
+                         			<a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><img src="images/profile.png" width="30" height="30"/>Profile <i class="caret"></i></a>
+	                         <ul class="dropdown-menu">
+	                         	
+		                        	 <li>
+		                                 <a tabindex="-1" href="editCompanyProfile.do">Update Profile Info </a>
+		                             </li>
+							  	
+	                            
+		                        	 <li>
+	                                 	<a tabindex="-1" href="changepwd.do">Change Password</a>
+	                             	</li>
+							  	
+	                         </ul>
+                    	 </li>	
+							
+					  	
+					  	
+						  <li class="dropdown">
+                         			<a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><img src="images/settings.png" width="30" height="30"/>Settings <i class="caret"></i></a>
+	                         <ul class="dropdown-menu">
+	                         	
+		                        	 <li>
+		                                 <a tabindex="-1" href="manageUserConfiguration.do">Manage Configuration </a>
+		                             </li>
+							  	
+							  	
+		                        	 <li>
+	                                 	<a tabindex="-1" href="manageOptOutDefIndex.do">Manage Opt-Out Of Defects</a>
+	                             	</li>
+							  	
+	                         </ul>
+                    	 </li>	
+							
+					  	
+					  	
+						  <li class="dropdown">
+                         			<a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><img src="images/users.png" width="30" height="30"/>Users <i class="caret"></i></a>
+	                         <ul class="dropdown-menu">
+	                         	
+		                        	 <li>
+	                                 	<a tabindex="-1" href="suIndex.do">Manage Secondary Users</a>
+	                             	</li>
+							  	
+							  	
+		                        	 <li>
+	                                 	<a tabindex="-1" href="suFileUploadIndex.do">Bulk Registrations</a>
+	                             	</li>
+							  	
+	                         </ul>
+                    	 </li>	
+							
+					  	
+					  			
+							  	
+							  								  	
+						
+                        	 <li>
+                                 <a href="badOrderSearchIndex.do"><img src="images/search.png" width="30" height="30"/>Bad Order Search </a>
+                             </li>
+						
+							  		  	
+					   
+						  <li class="dropdown">
+                         			<a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><img src="images/location.png" width="30" height="30"/>Mapping <i class="caret"></i></a>
+	                         <ul class="dropdown-menu">
+							  	
+		                        	 <li>
+	                                 	<a tabindex="-1" href="foMappingIndex.do">FO Mapping</a>
+	                             	</li>
+							  	
+							  	
+		                        	 <li>
+	                                 	<a tabindex="-1" href="mrvMappingIndex.do">MRV Mapping</a>
+	                             	</li>
+							  	
+	                         </ul>
+                    	 </li>	
+								
+					  	
+					  	
+							<li>
+	                      		<a href="iepReportsIndex.do"><img src="images/report.png" width="30" height="30"/>Reports</a>
+	                  		</li>
+					  	
+	           	  
+	             
+	               
+	                
+	               
+	               
+		         
+				     <li>
+				         <a href="logout.do"><img src="images/logout.png" width="30" height="30"/>Logout</a>
+				     </li>
+                </ul>                              
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+ <!-- loading start -->
+<div id="ajax_loader" style="text-align: center;">
+		<img style="vertical-align: middle;" alt="loading..." src="images/loading2.gif" height="35"
+			/> &nbsp; Processing...Please wait...
+</div>
+<!-- loading end -->
+ <!-- error Div start -->
+<div id="errorDiv"></div> 
+
+  
+         <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12" id="content">
+
+
+
+
+
+  
+        
+ <div class="block">
+       <div class="navbar navbar-inner block-header">
+            <div class="muted pull-left">Create New Secondary User  </div>
+        </div>
+     	<div class="block-content collapse in">
+               <div class="span12">
+               	<form id="registrationVO" class="form-horizontal" action="createSUAccount.do" method="post">	
+                  <fieldset>
+                  	<div class="control-group">
+	                     <label class="control-label">Type of User :<span class="gfield_required">*</span></label>
+	                     <div class="controls">
+	                        	<select id="userTypes" name="contactDetailsVo.userType" class="chzn-select" onchange="populateIepInfo(this.value);"><option value="0">Select User Type</option><option value="2">MRV</option><option value="3">FO</option><option value="5">INTERNAL USER</option></select>
+	                       <span class="help-inline"></span>
+	                     </div>
+		             </div>
+                    <div class="control-group">
+                      <label class="control-label">Company Name :<span class="gfield_required">*</span></label>
+                      <div class="controls">
+                         <input id="companyName" name="contactDetailsVo.companyName" placeholder="Enter Company Name" onblur="strTrim(&#39;companyName&#39;);strProperCaseComp(&#39;companyName&#39;);utfNonEnglishChars(&#39;companyName&#39;);" type="text" value="" maxlength="200"/>
+                        <span class="help-inline"></span>
+                      </div>
+                    </div>
+					<div class="control-group">
+                      <label class="control-label">USDOT :</label>
+                      <div class="controls">
+                         	 <input id="usdot" name="contactDetailsVo.usDOT" onkeypress="return myFormat(this,event,&#39;########&#39;);" onkeyup="truncateLeadingZero(this);" type="text" value="" maxlength="15"/>
+                        <span class="help-inline"></span>
+                      </div>
+                    </div>
+                    
+                    <div class="control-group">
+                      <label class="control-label">SCAC :</label>
+                      <div class="controls">
+                         	<input id="scac" name="contactDetailsVo.scac" onkeyup="toUpper(this)" type="text" value="" maxlength="4"/>
+                        <span class="help-inline"></span>
+                      </div>
+                    </div>
+				 
+				 	 <div class="control-group">
+                      <label class="control-label">First Name :<span class="gfield_required">*</span></label>
+                      <div class="controls">
+                         	<input id="contactDetailsVo.firstName" name="contactDetailsVo.firstName" placeholder="Enter First Name" onblur="strTrim(&#39;contactDetailsVo.firstName&#39;);strProperCase(&#39;contactDetailsVo.firstName&#39;);" type="text" value="" maxlength="50"/>
+                        <span class="help-inline"></span>
+                      </div>
+                    </div>
+				 
+				 	 <div class="control-group">
+                      <label class="control-label">Last Name :<span class="gfield_required">*</span></label>
+                      <div class="controls">
+                         <input id="contactDetailsVo.lastName" name="contactDetailsVo.lastName" placeholder="Enter Last Name" onblur="strTrim(&#39;contactDetailsVo.lastName&#39;);strProperCase(&#39;contactDetailsVo.lastName&#39;);" type="text" value="" maxlength="50"/>
+                        <span class="help-inline"></span>
+                      </div>
+                    </div>
+                    
+                    <div class="control-group">
+                      <label class="control-label">Title :<span class="gfield_required">*</span></label>
+                      <div class="controls">
+                         <input id="contactDetailsVo.title" name="contactDetailsVo.title" placeholder="Enter Job Title" onblur="strTrim(&#39;contactDetailsVo.title&#39;);strProperCaseTitle(&#39;contactDetailsVo.title&#39;);" type="text" value="" maxlength="50"/>
+                        <span class="help-inline"></span>
+                      </div>
+                    </div>
+                     <div class="control-group">
+                      <label class="control-label">Email Address :<span class="gfield_required">*</span></label>
+                      <div class="controls">
+                          <input id="email" name="contactDetailsVo.email" placeholder="Enter Email address" onblur="doEmailVerification();" type="text" value="" maxlength="100"/>
+                        <span class="help-inline">
+                        		<span id="emailError" class="field-error"></span>
+                        		
+                        </span>
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label">Phone Number :<span class="gfield_required">*</span></label>
+                      <div class="controls">
+                           <input id="phone" name="contactDetailsVo.phone" onkeypress="return myFormat(this, event,&#39;(###)###-#### Ext: #####&#39;);" placeholder="Enter Phone No." onblur="valid_phone(this);" type="text" value="" maxlength="25"/>
+                        <span class="help-inline"></span>
+                      </div>
+                    </div>
+                    <div class="control-group">
+                      <label class="control-label">Fax No :<span class="gfield_required">*</span></label>
+                      <div class="controls">
+                           <input id="fax" name="contactDetailsVo.fax" onkeypress="return myFormat(this, event,&#39;(###)###-#### Ext: #####&#39;);" placeholder="Enter Fax No." onblur="valid_fax(this);" type="text" value="" maxlength="25"/>
+                        <span class="help-inline"></span>
+                      </div>
+                    </div>
+                    
+                     <div class="control-group">
+                      <label class="control-label">Address Line 1 :<span class="gfield_required">*</span></label>
+                      <div class="controls">
+                           <textarea id="contactDetailsVo.address1" name="contactDetailsVo.address1" style="resize: none;" placeholder="Enter Address Line 1" onblur="strTrim(&#39;contactDetailsVo.address1&#39;);strProperCase(&#39;contactDetailsVo.address1&#39;);pobox(this,this.value);utfNonEnglishChars(&#39;contactDetailsVo.address1&#39;);" rows="2" cols="10"></textarea>
+                        <span class="help-inline"></span>
+                      </div>
+                    </div>
+                    
+                    <div class="control-group">
+                      <label class="control-label">Address Line 2 :</label>
+                      <div class="controls">
+                          <textarea id="contactDetailsVo.address2" name="contactDetailsVo.address2" style="resize: none;" placeholder="Enter Address Line 2" onblur="strTrim(&#39;contactDetailsVo.address2&#39;);strProperCase(&#39;contactDetailsVo.address2&#39;);pobox(this,this.value);utfNonEnglishChars(&#39;contactDetailsVo.address2&#39;);" rows="2" cols="10"></textarea>
+                        <span class="help-inline"></span>
+                      </div>
+                    </div>
+				 
+				 
+				   <div class="control-group">
+                      <label class="control-label">City :<span class="gfield_required">*</span></label>
+                      <div class="controls">
+                          <input id="contactDetailsVo.city" name="contactDetailsVo.city" placeholder="Enter City" onblur="strTrim(&#39;contactDetailsVo.city&#39;);strProperCase(&#39;contactDetailsVo.city&#39;);utfNonEnglishCharsCity(&#39;contactDetailsVo.city&#39;);" type="text" value="" maxlength="50"/>
+                        <span class="help-inline"></span>
+                      </div>
+                   </div>
+				 
+				    <div class="control-group">
+                      <label class="control-label">State Abbreviation :<span class="gfield_required">*</span></label>
+                      <div class="controls">
+                         <input id="contactDetailsVo.state" name="contactDetailsVo.state" placeholder="Enter State Abbr" onchange="javascript:this.value=this.value.toUpperCase();" type="text" value="" maxlength="2"/>
+                        <span class="help-inline"></span>
+                      </div>
+                    </div>
+                    
+                   <div class="control-group">
+                      <label class="control-label">Zip Code :<span class="gfield_required">*</span></label>
+                      <div class="controls">
+                         <input id="contactDetailsVo.zipCode" name="contactDetailsVo.zipCode" placeholder="Enter 5 digit Zip / Zip + 4 code" type="text" value="" maxlength="12"/>
+                        <span class="help-inline"></span>
+                      </div>
+                    </div>
+				 
+				 	<div class="control-group">
+                      <label class="control-label">Country :<span class="gfield_required">*</span></label>
+                      <div class="controls">
+                        <select id="countries" name="contactDetailsVo.countryId" class="chzn-select"><option value="1">USA</option><option value="2">CAN</option><option value="3">MAX</option></select>
+                        <span class="help-inline"></span>
+                     </div>
+                    </div>  
+                    
+              		 <div class="control-group">
+                      <label class="control-label">User Name :<span class="gfield_required">*</span></label>
+                      <div class="controls">
+                           <input id="userName" name="loginVo.userName" placeholder="Enter User Name" type="text" value="" maxlength="100"/>
+                        <span class="help-inline"></span>
+                      </div>
+                    </div>
+		                    
+                     <div class="control-group">
+                      <label class="control-label">Password :<span class="gfield_required">*</span></label>
+                      <div class="controls">
+                          <input id="password" name="loginVo.password" placeholder="Enter Password" type="password" value="" maxlength="15"/>
+                        <span class="help-inline"></span>
+                      </div>
+                    </div>	 
+                     <div class="control-group">
+                      <label class="control-label">Confirm Password :<span class="gfield_required">*</span></label>
+                      <div class="controls">
+                         <input id="rePwd" name="loginVo.confirmPwd" placeholder="Re-type Password" type="password" value="" maxlength="15"/>
+                        <span class="help-inline"></span>
+                      </div>
+                    </div>
+                    
+                     <div class="form-actions">
+                      <button type="submit"  class="btn btn-primary"  onclick="return doEmailVerification();">Submit</button>
+                      <a href="suIndex.do" class="btn btn-success"><i class="icon-circle-arrow-left icon-white"></i> Back </a>	
+                	  <a href="home.do" class="btn btn-danger"><i class="icon-remove-sign icon-white"></i> Close </a>	
+                    </div>
+                  </fieldset>
+                </form>
+            </div>
+        </div> 
+  </div>
+  
+
+
+
+	 <!--<script src="vendors/jquery-1.9.1.min.js"></script> -->
+	 <!-- <script src="vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script> -->
+	<script src="vendors/jquery-1.10.2.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/scripts.js"></script>
+	<!-- <script src="vendors/datatables/js/jquery.dataTables.min.js"></script> -->
+	<script src="vendors/datatables/js/jquery.dataTables.js"></script>
+	<script src="assets/DT_bootstrap.js"></script>
+	<script src="vendors/jGrowl/jquery.jgrowl.js"></script>
+	
+	<script src="vendors/jquery.uniform.min.js"></script>
+	<script src="vendors/chosen.jquery.min.js"></script>
+	 <!--<script src="vendors/bootstrap-datepicker.js"></script> -->
+	<script src="vendors/wysiwyg/wysihtml5-0.3.0.js"></script>
+	<script src="vendors/wysiwyg/bootstrap-wysihtml5.js"></script>
+	<script src="vendors/wizard/jquery.bootstrap.wizard.min.js"></script>
+	<script src="vendors/jquery-ui-1.10.4.custom.js"></script>    
+	
+
+ 
+<script type="text/javascript" src="developerjs/application.js"></script>
+<script type="text/javascript" src="developerjs/request.js"></script>
+ <script>
+ $(function() {
+	 $(".chzn-select").chosen();
+ });
+ </script>
+
+</div>
+            </div>
+             
+
+
+<hr>
+<footer>
+<div align="center">
+	<p>Copyright &copy; 2014   Intermodal Association of North America. All Rights Reserved.</p>
+	<p>11785 Beltsville Drive, Suite 1100, Calverton, MD 20705 infosvcshelpdesk@intermodal.org	</p>
+</div>	
+</footer>    
+
+        </div>
+        <!--/.fluid-container-->
+    </body>
+</html>
